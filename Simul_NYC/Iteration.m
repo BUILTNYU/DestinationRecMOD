@@ -42,8 +42,8 @@ for j=1:w
     gamma=1+rand/2;
     vehcap=3+randi(5);
     
-    % Conduct RecMOD algorithm
-    [Thetat,Arms,Regret,Y,MaxUtil,ChosenUtil]=RecMOD_NYC(alpha,T,tau,lambda,vehcap,ttc,gamma,poi,ALTS,PassPool);
+    % Conduct RecoMOD algorithm
+    [Thetat,Arms,Regret,Y,MaxUtil,ChosenUtil]=RecoMOD_NYC(alpha,T,tau,lambda,vehcap,ttc,gamma,poi,ALTS,PassPool);
     
     % Arrange output
     IND(j,:)=[alpha,lambda,vehcap,ttc*gamma];
