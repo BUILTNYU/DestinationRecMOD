@@ -1,4 +1,4 @@
-# DestinationRecMOD
+# DestinationRecoMOD
 MATLAB function codes for destination recommendation mobility-on-demand (RecoMOD) system
 1. 7X7_network
   : RecoMOD simulated on the network with 49 zones
