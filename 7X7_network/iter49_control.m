@@ -5,8 +5,8 @@
 %       ConstFlux49: assumed mean of constants of each zone which may be perceived differently by individuals
 
 % % Constants and increase of route cost data were generated in advance to maintain the same setting along simulations of different combinations
-%       ConstRealPool: 50000 combinations of generated constants covering 50000 trials (T*w=1000*50=50000)
-%       IncRouteCost: 50000 combinations of increasing route cost precalculated covering 50000 trials (T*w=1000*50=50000)
+%       ConstRealPool: 20000 combinations of generated constants covering 20000 trials (T*w=1000*20=20000)
+%       IncRouteCost: 20000 combinations of increasing route cost precalculated covering 20000 trials (T*w=1000*20=20000)
 
 % % Spatial information of zones (used in generating ConstRealPool and IncRouteCost)
 %       Zdist49: distance matrix among 49 zones on 7x7 network
@@ -18,7 +18,7 @@
 %       ttc = 0.1;   % ttc: converter from distance (mi) to time (min)
 
 function [Y]=iter49_control(w,A,B,Ratings49,ConstFlux49,ConstRealPool,IncRouteCost)
-% w: number of conducting simulations per case
+% w: number of conducting simulations per case (with this example dataset, w<=20)
 % A: type of constants 
 %   1: uniform (theta)
 %   2: alternative specific constant (ASC, theta_s), various constant for zones but fixed over the population
